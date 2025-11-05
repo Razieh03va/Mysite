@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Flow GmbH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 52px;
+    }
+
+    h2 {
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    p, li {
+      font-size: 20px;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+    }
+
+    .hero-left {
+      flex: 1;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+    }
+
+    .hero-right {
+      flex: 1;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero img {
+      max-width: 80%;
+      border-radius: 12px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 14px 30px;
+      background: #0a84ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+
+    .buttons a:hover {
+      background: #0066cc;
+    }
+
+    /* --- Alternating Sections --- */
+    .dark-section {
+      background: #111;
+      color: white;
+    }
+
+    .light-section {
+      background: #f9f9f9;
+    }
+
+    .service, .advantage, .step {
+      margin-bottom: 40px;
+    }
+
+    /* --- Contact Section --- */
+    .contact {
+      display: flex;
+      height: 100vh;
+    }
+
+    .contact-left {
+      flex: 1;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+    }
+
+    .contact-right {
+      flex: 1;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    input, textarea, button {
+      margin-bottom: 20px;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0a84ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0066cc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Next Flow GmbH</h1>
+      <p style="font-size: 22px;">
+        Wir verbinden Finanzexpertise mit modernster Technologie. Unsere Lösungen in automatisierter Datenverarbeitung
+        und IT-gestützter Buchhaltung helfen Unternehmen, ihre Finanzprozesse effizient, transparent und zukunftssicher zu gestalten.
+      </p>
+      <div class="buttons">
+        <a href="#services">Unsere Arbeit</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1641912217258-50562a26f90d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=735" alt="Next Flow Team">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="light-section" id="about">
+    <h2>Wer wir sind</h2>
+    <p>
+      Next Flow GmbH ist ein österreichisches Unternehmen, das sich auf automatisierte Datenverarbeitung und IT-Dienstleistungen
+      im Finanzbereich spezialisiert hat. Unser Fokus liegt auf der Entwicklung von innovativer Buchhaltungssoftware,
+      IT-gestützter Finanzberatung und digitalen Accounting-Lösungen.  
+      Wir helfen kleinen und mittleren Unternehmen, komplexe Finanzprozesse zu automatisieren, um Zeit zu sparen und Fehler zu vermeiden.  
+      Unser Ziel ist es, Finanzmanagement nahtlos, effizient und intelligent zu gestalten.  
+      Mit einem erfahrenen Team aus Entwicklern und Finanzexperten schaffen wir digitale Werkzeuge, die echten Mehrwert bieten.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="dark-section" id="services">
+    <h2>Unsere Lösungen</h2>
+    <div class="service">
+      <h3>1. Entwicklung von Buchhaltungssoftware</h3>
+      <p>
+        Wir entwerfen maßgeschneiderte Accounting-Systeme, die sich an die individuellen Bedürfnisse Ihres Unternehmens anpassen.
+        Automatisierte Buchungsvorgänge, Echtzeit-Reporting und sichere Datenintegration stehen im Mittelpunkt unserer Lösungen.
+      </p>
+    </div>
+    <div class="service">
+      <h3>2. IT-gestützte Finanzberatung</h3>
+      <p>
+        Unsere Berater verbinden tiefes Finanzwissen mit moderner Technologie.
+        Wir helfen Ihnen, Daten sinnvoll zu nutzen, Risiken zu minimieren und strategische Entscheidungen auf Basis aktueller Analysen zu treffen.
+      </p>
+    </div>
+    <div class="service">
+      <h3>3. Digitale Buchhaltungsservices</h3>
+      <p>
+        Wir übernehmen Ihre Buchhaltungsprozesse vollständig digital – von der Belegerfassung bis zur Erstellung von Finanzberichten.
+        So sparen Sie Zeit und können sich auf das Wachstum Ihres Unternehmens konzentrieren.
+      </p>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="light-section">
+    <h2>Warum Next Flow?</h2>
+    <div class="advantage">
+      <h3>Technologie trifft Expertise</h3>
+      <p>
+        Unser Team vereint IT-Spezialisten und erfahrene Finanzberater. Diese Kombination ermöglicht uns,
+        Lösungen zu entwickeln, die sowohl technisch fortschrittlich als auch fachlich präzise sind.
+      </p>
+    </div>
+    <div class="advantage">
+      <h3>Effizienz und Transparenz</h3>
+      <p>
+        Wir gestalten Ihre Finanzprozesse so, dass sie nachvollziehbar, automatisiert und jederzeit prüfbar bleiben.
+        Das spart Ressourcen und stärkt das Vertrauen Ihrer Partner und Kunden.
+      </p>
+    </div>
+    <div class="advantage">
+      <h3>Maßgeschneiderte Lösungen</h3>
+      <p>
+        Keine Standardsoftware – wir entwickeln Systeme, die sich exakt an Ihre internen Abläufe anpassen und mit Ihrem Unternehmen wachsen.
+      </p>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="dark-section">
+    <h2>Unser Weg zum Erfolg</h2>
+    <div class="step">
+      <h3>1. Analyse & Beratung</h3>
+      <p>
+        Wir beginnen mit einer detaillierten Analyse Ihrer bestehenden Systeme und Anforderungen, um maßgeschneiderte Strategien zu entwickeln.
+      </p>
+    </div>
+    <div class="step">
+      <h3>2. Entwicklung & Integration</h3>
+      <p>
+        Auf Basis der Analyse entwickeln wir moderne IT-Lösungen, die sich nahtlos in Ihre bestehende Infrastruktur integrieren lassen.
+      </p>
+    </div>
+    <div class="step">
+      <h3>3. Betreuung & Optimierung</h3>
+      <p>
+        Nach der Implementierung begleiten wir Sie langfristig, um Ihre Prozesse kontinuierlich zu verbessern und auf neue Anforderungen anzupassen.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-left">
+      <h2>Lassen Sie uns zusammenarbeiten</h2>
+      <p>
+        Schreiben Sie uns an <strong>info@nextflow-at.pro</strong> oder besuchen Sie uns in unserem Büro:
+        <br><strong>Würzburggasse 33/2, 1130 Wien</strong>.
+      </p>
+      <p>
+        Wir freuen uns darauf, Ihr Unternehmen mit digitalen Lösungen in die Zukunft zu führen.
+        Vertrauen Sie auf unsere Erfahrung in Finanzen, Technologie und Automatisierung.
+      </p>
+    </div>
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Ihr Name" required>
+        <input type="email" placeholder="Ihre E-Mail" required>
+        <textarea rows="4" placeholder="Ihre Nachricht"></textarea>
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
